@@ -5,7 +5,6 @@
 
 runtime_resource_overlay {
     name: "WifiResOverlayYunluo",
-    sdk_version: "current",
     vendor: true,
     resource_dirs: ["res"]
 }

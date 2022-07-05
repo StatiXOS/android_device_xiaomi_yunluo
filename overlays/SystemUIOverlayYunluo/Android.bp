@@ -6,7 +6,6 @@
 
 runtime_resource_overlay {
     name: "SystemUIOverlayYunluo",
-    sdk_version: "current",
     vendor: true,
     resource_dirs: ["res"]
 }
