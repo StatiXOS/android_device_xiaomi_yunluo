@@ -85,6 +85,7 @@ vendor.connsys.driver.ready=no
 # Display
 debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
+debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration=21500000
 debug.sf.earlyGl.app.duration=21500000
 debug.sf.earlyGl.sf.duration=29100000
