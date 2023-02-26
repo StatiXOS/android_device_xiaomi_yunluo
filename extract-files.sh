@@ -103,6 +103,20 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "android.hardware.sensors@1.0-convert-shared.so" "${2}"
             ;;
+        vendor/lib64/libSQLiteModule_VER_ALL.so|\
+        vendor/lib64/libteei_daemon_vfs.so|\
+        vendor/lib64/mt6789/lib3a.ae.stat.so|\
+        vendor/lib64/mt6789/lib3a.flash.so|\
+        vendor/lib64/mt6789/lib3a.sensors.color.so|\
+        vendor/lib64/mt6789/lib3a.sensors.flicker.so|\
+        vendor/lib64/mt6789/libaaa_ltm.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "liblog.so" "${2}"
+            ;;
+        vendor/lib64/mt6789/libmnl.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+            ;;
         *)
             return 1
             ;;
