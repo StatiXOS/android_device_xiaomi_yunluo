@@ -1,0 +1,22 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+
+cc_binary {
+    name: "android.hardware.light-service.yunluo",
+    init_rc: ["android.hardware.light-service.yunluo.rc"],
+    vintf_fragments: ["android.hardware.light-service.yunluo.xml"],
+    relative_install_path: "hw",
+    srcs: [
+        "main.cpp",
+        "Light.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libhardware",
+        "libbinder_ndk",
+        "android.hardware.light-V2-ndk",
+    ],
+    vendor: true,
+}
