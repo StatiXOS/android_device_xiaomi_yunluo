@@ -62,6 +62,7 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod)
+            "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             "${PATCHELF}" --remove-needed "android.hardware.security.keymint-V1-ndk_platform.so" "${2}"
             "${PATCHELF}" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "${2}"
             "${PATCHELF}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
