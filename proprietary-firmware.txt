@@ -1,0 +1,12 @@
+# Firmware - from yunluo-user 12 SP1A.210812.016 V14.0.4.0.TLYMIXM release-keys
+dpm.img;AB
+gz.img;AB
+lk.img;AB
+logo.img;AB
+mcupm.img;AB
+pi_img.img;AB
+preloader_raw.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
