@@ -107,9 +107,6 @@ BOARD_SUPER_PARTITION_GROUPS := mtk_dynamic_partitions
 BOARD_MTK_DYNAMIC_PARTITIONS_PARTITION_LIST := $(ALL_PARTITIONS)
 BOARD_MTK_DYNAMIC_PARTITIONS_SIZE := 9122611200
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/touch_dev/gesture_double_tap_state"
-
 # Properties
 TARGET_PRODUCT_PROP += $(CONFIGS_PATH)/props/product.prop
 TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
