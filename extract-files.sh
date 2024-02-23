@@ -88,6 +88,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/lib64/hw/audio.primary.mediatek.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
         vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
             [ "$2" = "" ] && return 0
             sed -i '/vts/Q' "$2"
