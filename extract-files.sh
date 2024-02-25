@@ -126,6 +126,7 @@ function blob_fixup() {
             sed -i '/format_version/ s/minor="3"/minor="6"/' "${2}"
             sed -i '/tool_version/ s/minor="5"/minor="11"/' "${2}"
             sed -i '/bundle/ s/1.3/2.0/' "${2}"
+            sed -i '/volume-leveler-enable/ s/true/false/g' "${2}"
             ;;
         *)
             return 1
