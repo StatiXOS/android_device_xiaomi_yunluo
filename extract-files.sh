@@ -132,6 +132,7 @@ function blob_fixup() {
             sed -i '/include/ s/preset="ieq_balanced"/ieq_preset="2"/g' "${2}"
             sed -i '/include/ s/preset="ieq_detailed"/ieq_preset="1"/g' "${2}"
             sed -i '/include/ s/preset="ieq_warm"/ieq_preset="3"/g' "${2}"
+            sed -i '/volume-leveler-enable/ s/true/false/g' "${2}"
             ;;
         *)
             return 1
