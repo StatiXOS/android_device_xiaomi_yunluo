@@ -64,9 +64,9 @@ on charger
     start fuelgauged_nvram
 
     chown system system /sys/class/leds/lcd-backlight/brightness
-    # Configure default brightness and switch to backlight trigger.
+    # Configure default brightness and switch to drm backlight trigger.
     write /sys/class/leds/lcd-backlight/brightness 1000
-    write /sys/class/leds/lcd-backlight/trigger "backlight"
+    write /sys/class/leds/lcd-backlight/trigger "backlight-drm"
 
 # initialize powerHAL when boot is completed
 on property:sys.boot_completed=1
