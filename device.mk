@@ -258,7 +258,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
 	libkeystore-wifi-hidl:64 \
-    libkeystore-engine-wifi-hidl:64
+    libkeystore-engine-wifi-hidl:64 \
+    libwifi-hal-wrapper
 
 # Permissions
 PRODUCT_PACKAGES += \
