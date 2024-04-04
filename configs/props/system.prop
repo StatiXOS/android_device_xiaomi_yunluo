@@ -6,6 +6,9 @@ vendor.audio.cpus=8
 vendor.audiomediatek.cpu.littlecore=true
 vendor.audiomediatek.cpu.mask=0x3f
 
+# Charger
+ro.charger.enable_suspend=true
+
 # Connectivity
 ro.mediatek.wlan.p2p=1
 ro.mediatek.wlan.wsc=1
