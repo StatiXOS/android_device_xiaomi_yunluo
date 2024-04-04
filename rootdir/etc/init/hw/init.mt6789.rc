@@ -669,7 +669,7 @@ on property:vendor.mtk.md1.status=reset
 on property:persist.vendor.mediatek.fast_charging.support=*
     write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
 
-service charger /system/bin/charger
+service vendor.charger /system/bin/charger
     class charger
     user system
     group system graphics wakelock input
