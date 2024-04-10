@@ -1,4 +1,4 @@
-# Unpinned blobs from yunluo-user 12 SP1A.210812.016 V14.0.3.0.TLYMIXM release-keys
+# Unpinned blobs from yunluo-user 12 SP1A.210812.016 V14.0.4.0.TLYMIXM release-keys
 
 # AAL
 -vendor/lib64/libaal_cust.so
@@ -997,4 +997,3 @@ vendor/thh/ta/isee_model.json
 -vendor/lib64/libconnfem.so
 -vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 -vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
-
