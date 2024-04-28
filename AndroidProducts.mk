@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/lineage_yunluo.mk
+	$(LOCAL_DIR)/statix_yunluo.mk
 
 COMMON_LUNCH_CHOICES := \
-    $(foreach FLAVOR, user userdebug eng, lineage_yunluo-$(FLAVOR))
+    $(foreach FLAVOR, user userdebug eng, statix_yunluo-$(FLAVOR))

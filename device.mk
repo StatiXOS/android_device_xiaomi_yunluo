@@ -265,6 +265,10 @@ PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl:64 \
     libwifi-hal-wrapper
 
+# One-handed mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_one_handed_mode=false
+
 # Permissions
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml \

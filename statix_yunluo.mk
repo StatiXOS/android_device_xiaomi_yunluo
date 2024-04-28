@@ -11,10 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/yunluo/device.mk)
 
-# Inherit some common LineageOS Stuff
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common StatiXOS stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
+DISABLE_COLUMBUS := true
+ENABLE_GAMETOOLS := true
+INCLUDE_PIXEL_LAUNCHER := true
+TARGET_USES_BLUR := true
 
-PRODUCT_NAME := lineage_yunluo
+PRODUCT_NAME := statix_yunluo
 PRODUCT_DEVICE := yunluo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
