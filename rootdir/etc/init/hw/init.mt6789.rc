@@ -512,9 +512,9 @@ on post-fs-data
     # EXM
     chmod 0666 /dev/exm0
 
-	# Thermal
-	mkdir /data/vendor/.tp/ 0775 system system
-	mkdir /data/vendor/thermal/ 0775 system system
+    # Thermal
+    mkdir /data/vendor/.tp/ 0775 system system
+    mkdir /data/vendor/thermal/ 0775 system system
 
     # MCUPM log
     chmod 0620 /sys/class/misc/mcupm/mcupm_mobile_log
@@ -522,9 +522,9 @@ on post-fs-data
     chmod 0440 /dev/mcupm
     chown root system /dev/mcupm
 
-	# Widevine driver node
-	chmod 0660 /dev/drm_wv
-	chown media system /dev/drm_wv
+    # Widevine driver node
+    chmod 0660 /dev/drm_wv
+    chown media system /dev/drm_wv
 
     chmod 0666 /sys/module/metis/parameters/mi_viptask
     restorecon /sys/module/metis/parameters/mi_viptask
@@ -666,4 +666,3 @@ on property:vendor.mtk.md1.status=reset
 # MTK fast charging support
 on property:persist.vendor.mediatek.fast_charging.support=*
     write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
-

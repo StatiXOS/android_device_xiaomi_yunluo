@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AudioParameter>
-	<DumpOptions>
+    <DumpOptions>
         <Category title="Output">
             <Option type="SetAudioCommand" cmd="0x63" check="1" uncheck="0">Stream Output Dump</Option>
             <Option type="SetAudioCommand" cmd="0x69" check="1" uncheck="0">A2DP Stream Output Dump</Option>
@@ -19,7 +19,7 @@
             <Option type="SetParameters" cmd="vendor.af.effect.pcm" check="1" uncheck="0">AudioEffect Dump</Option>
             <Option type="SetParameters" cmd="vendor.aaudio.pcm" check="1" uncheck="0">AAudio Dump</Option>
         </Category>
-	</DumpOptions>
+    </DumpOptions>
 
     <SetAudioCommand>
         <Option>0x99, 1</Option>

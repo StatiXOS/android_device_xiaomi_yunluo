@@ -21,4 +21,3 @@
 ## Device Picture
 
 ![Xiaomi Redmi Pad](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-pad-01.jpg)
-

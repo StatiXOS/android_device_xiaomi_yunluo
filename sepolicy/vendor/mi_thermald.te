@@ -24,4 +24,3 @@ allow mi_thermald {
 }:file rw_file_perms;
 
 set_prop(mi_thermald, vendor_thermal_normal_prop)
-

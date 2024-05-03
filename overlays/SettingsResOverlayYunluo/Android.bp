@@ -9,4 +9,3 @@ runtime_resource_overlay {
     vendor: true,
     resource_dirs: ["res"]
 }
-

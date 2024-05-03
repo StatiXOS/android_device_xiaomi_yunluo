@@ -1,3 +1,2 @@
 get_prop(audioserver, vendor_mtk_audio_prop)
 get_prop(audioserver, vendor_audioserver_prop)
-

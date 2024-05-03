@@ -31,4 +31,3 @@ if [ -f $cfg_file ]; then
     esac
   done < $cfg_file
 fi
-

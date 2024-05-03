@@ -4,4 +4,3 @@ on init
     setprop sys.usb.ffs.ready 1
     setprop sys.usb.controller "musb-hdrc"
     setprop vendor.usb.controller "musb-hdrc"
-

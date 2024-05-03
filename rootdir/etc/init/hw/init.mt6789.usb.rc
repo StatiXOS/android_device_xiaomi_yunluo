@@ -1,5 +1,5 @@
 on early-init
-	write /sys/module/musb_hdrc/parameters/kernel_init_done 1
+    write /sys/module/musb_hdrc/parameters/kernel_init_done 1
 
 on post-fs
     mkdir /dev/usb-ffs 0775 shell shell
@@ -231,4 +231,3 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mass_storage,adb && p
     symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
     write /config/usb_gadget/g1/UDC ${vendor.usb.controller}
     setprop sys.usb.state ${sys.usb.config}
-

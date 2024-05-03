@@ -4,4 +4,3 @@ allow init_insmod_sh proc_cmdline:file r_file_perms;
 # Allow required capabilities for modprobe
 allow init_insmod_sh self:capability sys_nice;
 allow init_insmod_sh kernel:process setsched;
-

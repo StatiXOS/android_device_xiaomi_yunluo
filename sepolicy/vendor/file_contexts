@@ -15,4 +15,3 @@
 
 # Touch panel gesture
 /sys/devices/virtual/touch/touch_dev/gesture_double_tap_state u:object_r:sysfs_tp_gesture:s0
-

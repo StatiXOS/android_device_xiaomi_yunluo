@@ -36,4 +36,3 @@ genfscon sysfs /devices/platform/soc/15020000.imgsys_config/wakeup u:object_r:sy
 genfscon sysfs /devices/platform/1a000000.camisp_legacy/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/18002000.consys/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt635x-auxadc/wakeup u:object_r:sysfs_wakeup:s0
-

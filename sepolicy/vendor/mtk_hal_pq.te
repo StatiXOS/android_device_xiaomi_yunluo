@@ -1,3 +1,2 @@
 # Allow pq to read displayfeature nodes
 r_dir_file(mtk_hal_pq, vendor_sysfs_displayfeature)
-

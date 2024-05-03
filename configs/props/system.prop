@@ -1,11 +1,3 @@
-# Media
-debug.stagefright.c2inputsurface=-1
-media.stagefright.thumbnail.prefer_hw_codecs=true
-vendor.mtk_thumbnail_optimization=true
-
-# Storage
-persist.sys.fuse.passthrough.enable=true
-
 # Audio
 ro.audio.usb.period_us=16000
 vendor.audio.cpu.littlecore=true
@@ -14,42 +6,48 @@ vendor.audio.cpus=8
 vendor.audiomediatek.cpu.littlecore=true
 vendor.audiomediatek.cpu.mask=0x3f
 
-# Kernel
-ro.kernel.zio=38,108,105,16
-
 # Connectivity
 ro.mediatek.wlan.p2p=1
 ro.mediatek.wlan.wsc=1
+vendor.rild.libargs=-d /dev/ttyC0
+vendor.rild.libpath=mtk-ril.so
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
-vendor.rild.libargs=-d /dev/ttyC0
-vendor.rild.libpath=mtk-ril.so
 
 # Dexopt
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.boot-dex2oat-threads=6
 dalvik.vm.dex2oat64.enabled=true
-pm.dexopt.install=speed-profile
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.dex2oat-threads=6
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.image-dex2oat-threads=6
+pm.dexopt.ab-ota=speed-profile
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=verify
-pm.dexopt.ab-ota=speed-profile
-dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
-dalvik.vm.dex2oat-threads=6
-dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5
-dalvik.vm.boot-dex2oat-threads=6
-dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
-dalvik.vm.image-dex2oat-threads=6
-
-# Netflix
-ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
-ro.netflix.signup=1
+pm.dexopt.install=speed-profile
 
 # Graphics
 ro.opengles.version=196610
-ro.surface_flinger.supports_background_blur=1
-ro.sf.blurs_are_expensive=1
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# Media
+debug.stagefright.c2inputsurface=-1
+media.stagefright.thumbnail.prefer_hw_codecs=true
+vendor.mtk_thumbnail_optimization=true
 
 # Mediatek
 ro.vendor.mtk_cta_set=1
 ro.vendor.mtk_flv_playback_support=1
 ro.vendor.mtk_telephony_add_on_policy=0
+
+# Netflix
+ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
+ro.netflix.signup=1
+
+# Storage
+persist.sys.fuse.passthrough.enable=true

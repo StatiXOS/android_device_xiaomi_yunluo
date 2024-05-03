@@ -1,2 +1,1 @@
 get_prop(hal_audio_default, vendor_audioserver_prop)
-

@@ -445,12 +445,12 @@
                 </component>
             </components>
         </library>
- <!--
- 	 * =====================================================================
- 	 * sixth algo
- 	 * =====================================================================
--->
-                <library name="sia81xx_sixth"
+        <!--
+         * =====================================================================
+         * sixth algo
+         * =====================================================================
+        -->
+        <library name="sia81xx_sixth"
                  lib_path="/vendor/lib/libsixth.so"
                  lib64_path="/vendor/lib64/libsixth.so"
                  param_path="/vendor/etc/sixa_aurisys_param/sixth_param.txt"
@@ -539,6 +539,6 @@
                     </downlink_process>
                 </component>
             </components>
-		</library>
+        </library>
     </hal_librarys>
 </aurisys_config>
