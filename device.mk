@@ -374,7 +374,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
 	hardware/mediatek \
-	hardware/xiaomi
+	vendor/hardware/xiaomi
 
 # Add vendor log tags
 include $(LOCAL_PATH)/configs/props/vendor_log_tags.mk
