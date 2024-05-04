@@ -124,7 +124,7 @@ include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Vendor Security Patch
-VENDOR_SECURITY_PATCH := 2023-12-01
+VENDOR_SECURITY_PATCH := 2024-02-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
