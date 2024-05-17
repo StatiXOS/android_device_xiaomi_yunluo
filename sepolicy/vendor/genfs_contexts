@@ -30,6 +30,7 @@ genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358
 genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006a/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input4/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11e00000.i2c/i2c-0/0-0021/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11e00000.i2c/i2c-0/0-0060/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/gpio-keys/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/15020000.imgsys_config/wakeup u:object_r:sysfs_wakeup:s0
