@@ -2,9 +2,6 @@
 allow hal_power_default sysfs_gpu:dir r_dir_perms;
 allow hal_power_default sysfs_gpu:file rw_file_perms;
 
-# Allow libperfmgr to control cpu frequencies
-allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
-
 # Allow libperfmgr to control FPSGO boost
 r_dir_file(hal_power_default, sysfs_fpsgo)
 allow hal_power_default sysfs_fpsgo:file w_file_perms;
@@ -18,6 +15,3 @@ allow hal_power_default sysfs_ged:file w_file_perms;
 
 # Allow libperfmgr to control DT2W state
 allow hal_power_default sysfs_tp_gesture:file rw_file_perms;
-
-# Allow libperfmgr to control cgroups
-allow hal_power_default cgroup:file rw_file_perms;
