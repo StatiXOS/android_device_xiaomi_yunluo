@@ -16,7 +16,6 @@ $(call inherit-product, vendor/statix/config/common.mk)
 DISABLE_COLUMBUS := true
 ENABLE_GAMETOOLS := true
 INCLUDE_PIXEL_LAUNCHER := true
-TARGET_USES_BLUR := true
 
 PRODUCT_NAME := statix_yunluo
 PRODUCT_DEVICE := yunluo
