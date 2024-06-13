@@ -133,6 +133,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor:64 \
     android.hardware.camera.provider@2.6.vendor:64
 
+PRODUCT_PACKAGES += \
+    libcamera_metadata.vendor \
+    libexif.vendor \
+    libpng.vendor
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml \
     frameworks/native/data/etc/android.hardware.camera.autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.autofocus.xml \
@@ -174,14 +179,17 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
-    android.hardware.gatekeeper@1.0-service
+    android.hardware.gatekeeper@1.0-service \
+    libgatekeeper.vendor:64
 
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     libdrm.vendor:64 \
     libhwc2on1adapter:64 \
-    libhwc2onfbadapter:64
+    libhwc2onfbadapter:64 \
+    libion.vendor \
+    libui.vendor
 
 PRODUCT_PACKAGES += \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml \
@@ -205,6 +213,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    libhidlmemory.vendor:64 \
     libhidltransport.vendor:64 \
     libhwbinder.vendor
 
@@ -325,6 +334,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.sensors-service.multihal \
+    libpower.vendor:64 \
     libsensorndkbridge:64
 
 PRODUCT_COPY_FILES += \
@@ -377,6 +387,11 @@ include $(LOCAL_PATH)/configs/props/vendor_log_tags.mk
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libunwindstack.vendor \
+    libutilscallstack.vendor
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
@@ -387,6 +402,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant
 
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libexpat.vendor \
+    libnetutils.vendor:64 \
     libpcap.vendor:64
 
 PRODUCT_COPY_FILES += \
