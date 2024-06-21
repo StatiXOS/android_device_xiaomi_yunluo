@@ -6,6 +6,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/statix_yunluo.mk
-
-COMMON_LUNCH_CHOICES := \
-    $(foreach FLAVOR, user userdebug eng, statix_yunluo-$(FLAVOR))
