@@ -191,7 +191,7 @@
 -vendor/lib64/hdr_preview.so
 -vendor/lib64/hq_algoutils.so
 -vendor/lib64/hq_asd.so
--vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so
+-vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so;NOCHECK
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
