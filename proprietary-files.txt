@@ -1,4 +1,4 @@
-# Unpinned blobs from yunluo-user 12 SP1A.210812.016 V816.0.2.0.ULYMIXM release-keys
+# Unpinned blobs from yunluo-user 12 SP1A.210812.016 V816.0.3.0.ULYMIXM release-keys
 
 # AAL
 -vendor/lib64/libaal_cust.so
