@@ -199,8 +199,8 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.mt6789 \
-    android.hardware.health-service.mt6789-recovery \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery \
     charger_res_images_vendor
 
 # HIDL
