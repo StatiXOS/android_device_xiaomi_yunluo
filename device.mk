@@ -293,6 +293,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayYunluo \
     SettingsResOverlayYunluo \
+    SystemUIOverlayYunluo \
     WifiResOverlayYunluo
 
 # Power
