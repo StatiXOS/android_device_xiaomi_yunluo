@@ -136,7 +136,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
     libexif.vendor \
-    libpng.vendor
+    libpng.vendor \
+    libziparchive.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml \
@@ -389,6 +390,7 @@ PRODUCT_COPY_FILES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libsqlite.vendor \
     libunwindstack.vendor \
     libutilscallstack.vendor
 
