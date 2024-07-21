@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/yunluo/device.mk)
 
 # Inherit some common StatiXOS stuff.
 $(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/wifionly.mk)
 DISABLE_COLUMBUS := true
 ENABLE_GAMETOOLS := true
 INCLUDE_PIXEL_LAUNCHER := true
