@@ -30,6 +30,7 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 # Audio
 vendor/lib64/hw/audio.primary.mediatek.so
 vendor/lib64/hw/audio.r_submix.mediatek.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v32.so;FIX_SONAME
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocomponentengine_vendor.so
