@@ -191,7 +191,7 @@
 -vendor/lib64/hdr_preview.so
 -vendor/lib64/hq_algoutils.so
 -vendor/lib64/hq_asd.so
--vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so;NOCHECK
+-vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
@@ -429,7 +429,7 @@
 -vendor/lib64/mt6789/libmtkcam_prerelease.so
 -vendor/lib64/mt6789/libmtkcam_rsc.so
 -vendor/lib64/mt6789/libmtkcam_scenariorecorder.so
--vendor/lib64/mt6789/libmtkcam_stdutils.so;NOCHECK
+-vendor/lib64/mt6789/libmtkcam_stdutils.so
 -vendor/lib64/mt6789/libmtkcam_streamutils.so
 -vendor/lib64/mt6789/libmtkcam_synchelper.so
 -vendor/lib64/mt6789/libmtkcam_sysutils.so
@@ -482,14 +482,14 @@
 -vendor/lib/liboemcrypto.so
 -vendor/lib/libtlcWidevineModularDrm.so
 -vendor/lib/liburee_meta_drmkeyinstall.so
--vendor/lib/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
--vendor/lib/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+-vendor/lib/libwvhidl.so
+-vendor/lib/mediadrm/libwvdrmengine.so
 -vendor/lib64/liboemcrypto.so
 -vendor/lib64/libtlcWidevineModularDrm.so
 -vendor/lib64/liburee_meta_drmkeyinstall.so
--vendor/lib64/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+-vendor/lib64/libwvhidl.so
 -vendor/lib64/libwvkeybox.so
--vendor/lib64/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+-vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Display configs
 -vendor/etc/AbnormalDisplayLog_dynamic.xml
@@ -627,7 +627,7 @@ vendor/lib/egl/egl.cfg
 
 # KMSetkey
 -vendor/bin/bp_kmsetkey_ca
--vendor/bin/kmsetkey;NODEPS
+-vendor/bin/kmsetkey
 -vendor/bin/kmsetkey_isee
 -vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 -vendor/lib64/hw/kmsetkey.beanpod.so
@@ -674,7 +674,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/mt6789/libmtk_drvb.so
 
 # Media (C2)
--vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;NOCHECK
+-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 -vendor/etc/VideoLog_dynamic.xml
 -vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 -vendor/etc/mtk_platform_codecs_config.xml
@@ -754,7 +754,7 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/armnn_app.config
 -vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
 -vendor/etc/nnapi_powerhal.json
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml;MODULE=android.hardware.neuralnetworks-shim-service-mtk.xml
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 -vendor/lib64/libarmnn.so
 -vendor/lib64/libarmnn_ndk.mtk.vndk.so
 -vendor/lib64/libasn1c_core.so
@@ -812,7 +812,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/mt6789/libpq_cust_base.so
 -vendor/lib/mt6789/libpq_prot.so
 -vendor/lib/vendor.mediatek.hardware.pq@2.0.so
--vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so;NOCHECK
+-vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so
 -vendor/lib64/libpqframework.so
 -vendor/lib64/librgbwlightsensor.so
 -vendor/lib64/mt6789/libpq_cust_base.so
