@@ -191,7 +191,7 @@
 -vendor/lib64/hdr_preview.so
 -vendor/lib64/hq_algoutils.so
 -vendor/lib64/hq_asd.so
--vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so;NOCHECK
+-vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so;DISABLE_CHECKELF
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
@@ -429,7 +429,7 @@
 -vendor/lib64/mt6789/libmtkcam_prerelease.so
 -vendor/lib64/mt6789/libmtkcam_rsc.so
 -vendor/lib64/mt6789/libmtkcam_scenariorecorder.so
--vendor/lib64/mt6789/libmtkcam_stdutils.so;NOCHECK
+-vendor/lib64/mt6789/libmtkcam_stdutils.so;DISABLE_CHECKELF
 -vendor/lib64/mt6789/libmtkcam_streamutils.so
 -vendor/lib64/mt6789/libmtkcam_synchelper.so
 -vendor/lib64/mt6789/libmtkcam_sysutils.so
@@ -674,7 +674,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/mt6789/libmtk_drvb.so
 
 # Media (C2)
--vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;NOCHECK
+-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;DISABLE_CHECKELF
 -vendor/etc/VideoLog_dynamic.xml
 -vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 -vendor/etc/mtk_platform_codecs_config.xml
@@ -812,7 +812,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/mt6789/libpq_cust_base.so
 -vendor/lib/mt6789/libpq_prot.so
 -vendor/lib/vendor.mediatek.hardware.pq@2.0.so
--vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so;NOCHECK
+-vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so;DISABLE_CHECKELF
 -vendor/lib64/libpqframework.so
 -vendor/lib64/librgbwlightsensor.so
 -vendor/lib64/mt6789/libpq_cust_base.so
