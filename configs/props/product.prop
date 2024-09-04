@@ -1,8 +1,0 @@
-# One-handed mode
-ro.support_one_handed_mode=false
-
-# Settings
-persist.settings.large_screen_opt.enabled=true
-
-# Setup Wizard
-ro.setupwizard.rotation_locked=false
