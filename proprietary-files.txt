@@ -506,7 +506,7 @@ vendor/etc/screen_light.xml
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
 vendor/etc/media_codecs_dolby_audio.xml|3119c61cc5471bb7902ac8b1ccd5785bb55a1918
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|eb0f8f1004dda4189943238d606f7dffa1427579
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|7cd36f0bf691424990bf783aa26640e506d80f2d
 vendor/bin/hw/vendor.dolby.media.c2@1.0-service|768a4736ae7d0bd6015b07d4d92d04310323c6c1
 vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
 vendor/lib/libdapparamstorage.so|25cbb0986684c1ee7e439509a78a985197238c35
