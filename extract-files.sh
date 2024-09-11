@@ -101,7 +101,7 @@ function blob_fixup() {
         vendor/lib64/mt6789/libaalservice.so|\
         vendor/lib64/mt6789/libcam.utils.sensorprovider.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
+            "${PATCHELF}" --add-needed "android.hardware.sensors@1.0-convert-shared.so" "${2}"
             ;;
         *)
             return 1
