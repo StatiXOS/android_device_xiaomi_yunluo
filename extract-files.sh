@@ -117,6 +117,12 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libcutils.so" "${2}"
             ;;
+        vendor/etc/dolby/dax-default.xml)
+            [ "$2" = "" ] && return 0
+            sed -i '/format_version/ s/minor="3"/minor="6"/' "${2}"
+            sed -i '/tool_version/ s/minor="5"/minor="11"/' "${2}"
+            sed -i '/bundle/ s/1.3/2.0/' "${2}"
+            ;;
         *)
             return 1
             ;;
