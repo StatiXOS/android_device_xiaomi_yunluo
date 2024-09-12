@@ -117,6 +117,18 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libcutils.so" "${2}"
             ;;
+        vendor/etc/dolby/dax-default.xml)
+            [ "$2" = "" ] && return 0
+            sed -i '/format_version/ s/minor="3"/minor="6"/' "${2}"
+            sed -i '/tool_version/ s/minor="5"/minor="11"/' "${2}"
+            sed -i '/bundle/ s/1.3/2.0/' "${2}"
+            sed -i '/preset/ s/id="ieq_balanced"/id="2" name="balanced"/' "${2}"
+            sed -i '/preset/ s/id="ieq_detailed"/id="1" name="detailed"/' "${2}"
+            sed -i '/preset/ s/id="ieq_warm"/id="3" name="warm"/' "${2}"
+            sed -i '/include/ s/preset="ieq_balanced"/ieq_preset="2"/g' "${2}"
+            sed -i '/include/ s/preset="ieq_detailed"/ieq_preset="1"/g' "${2}"
+            sed -i '/include/ s/preset="ieq_warm"/ieq_preset="3"/g' "${2}"
+            ;;
         *)
             return 1
             ;;
