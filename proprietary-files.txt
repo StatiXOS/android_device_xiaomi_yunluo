@@ -502,6 +502,37 @@ vendor/etc/dsi_l83_44_02_0b_cphy_vdo_mi.xml
 vendor/etc/dsi_l83_44_02_0c_cphy_vdo_mi.xml
 vendor/etc/screen_light.xml
 
+# Dolby - from cancunf_g_sys-user 12 U1TD34.100-46-7 d8053 release-keys
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
+vendor/etc/media_codecs_dolby_audio.xml|3119c61cc5471bb7902ac8b1ccd5785bb55a1918
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|eb0f8f1004dda4189943238d606f7dffa1427579
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|768a4736ae7d0bd6015b07d4d92d04310323c6c1
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+vendor/lib/libdapparamstorage.so|25cbb0986684c1ee7e439509a78a985197238c35
+vendor/lib/libdlbpreg.so|ee9b634f276642cb6a6d2cfb161911c6d5c48d9b
+vendor/lib/soundfx/libdlbvol.so|ed6c459b113c2ec39517a99ead9183d22e7078e7
+vendor/lib/soundfx/libmsstwrapper.so|e537b3e77381ed4d3e350401a9e177db9d6a6b19
+vendor/lib/soundfx/libswdap.so|c00232e925dc7b8f70a4e7dbce2f7190fc51453f
+vendor/lib/soundfx/libswgamedap.so|e66511f5214536ed44895d41d2263edc1d207c90
+vendor/lib/vendor.dolby.hardware.dms@2.0.so|a9e4115c20b3dccd75a8437f51c83e23755cff76
+vendor/lib64/libcodec2_soft_ac4dec.so|6a6b0f3fc05db172a044278fc74cd09b23f26ffc
+vendor/lib64/libcodec2_soft_ddpdec.so|2bb7e748e79a6621294ab98c6e761aea20b8278b
+vendor/lib64/libcodec2_store_dolby.so|177daebd62a5345d890ec05b3fd1e9a33d6d003b
+vendor/lib64/libdapparamstorage.so|9e6ae3ec124265e41f222013b9d986d596841fc6
+vendor/lib64/libdeccfg.so|1a5693678cff64abc73cf9ddf70bd20f3b21d430
+vendor/lib64/libdlbdsservice.so|cc26dc640646a98f0831a72be897c15c69a229a8
+vendor/lib64/libdlbpreg.so|918083ee45de22591beeb3403bf3b2b95edb26c6
+vendor/lib64/soundfx/libdlbvol.so|56f9f586e3a889a782d3a1aeb1fc8bb6123aeb5b
+vendor/lib64/soundfx/libmsstwrapper.so|4562681d7d0eb4286c94d1233d6a542a0232612e
+vendor/lib64/soundfx/libswdap.so|bc4fc7beb26a0538c5309311bd1e80f1ebb954d3
+vendor/lib64/soundfx/libswgamedap.so|a59b165d7ea6e321b311fb752e66f3df2725ec02
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|6b8668b099bc1c433a3deac511a4f40f1fd65d0f
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|cf196854737f466ea597bc89195f5a143206280c
+
+# Dolby Configuration
+vendor/etc/dolby/dax-default.xml
+
 # Firmware
 vendor/firmware/BT_FW.cfg
 vendor/firmware/NT36xxx_MP_Setting_Criteria_596C.csv
