@@ -80,6 +80,9 @@ PRODUCT_PACKAGES += \
     libopus.vendor:64 \
     libtinycompress:64
 
+PRODUCT_PACKAGES += \
+    XiaomiDolby
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 

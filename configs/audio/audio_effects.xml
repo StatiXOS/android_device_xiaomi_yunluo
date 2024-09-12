@@ -22,6 +22,9 @@
         <library name="loudness_enhancer" path="libldnhncr.so"/>
         <library name="dynamics_processing" path="libdynproc.so"/>
         <library name="pre_processing" path="libaudiopreprocessing.so"/>
+        <library name="dap" path="libswdap.so"/>
+        <library name="dvl" path="libdlbvol.so"/>
+        <library name="gamedap" path="libswgamedap.so"/>
     </libraries>
 
     <!-- list of effects to load.
@@ -62,7 +65,31 @@
         <effect name="agc" library="pre_processing" uuid="aa8130e0-66fc-11e0-bad0-0002a5d5c51b"/>
         <effect name="aec" library="pre_processing" uuid="bb392ec0-8d4d-11e0-a896-0002a5d5c51b"/>
         <effect name="ns" library="pre_processing" uuid="c06c8400-8e06-11e0-9cb6-0002a5d5c51b"/>
+        <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
+        <effect name="dlb_music_listener" library="dvl" uuid="40f66c8b-5aa5-4345-8919-53ec431aaa98"/>
+        <effect name="dlb_ring_listener" library="dvl" uuid="21d14087-558a-4f21-94a9-5002dce64bce"/>
+        <effect name="dlb_alarm_listener" library="dvl" uuid="6aff229c-30c6-4cc8-9957-dbfe5c1bd7f6"/>
+        <effect name="dlb_system_listener" library="dvl" uuid="874db4d8-051d-4b7b-bd95-a3bebc837e9e"/>
+        <effect name="dlb_notification_listener" library="dvl" uuid="1f0091e3-6ad8-40fe-9b09-5948f9a26e7e"/>
+        <effect name="gamedap" library="gamedap" uuid="3783c334-d3a0-4d13-874f-0032e5fb80e2"/>
     </effects>
+    <postprocess>
+        <stream type="music">
+            <apply effect="dlb_music_listener"/>
+        </stream>
+        <stream type="ring">
+            <apply effect="dlb_ring_listener"/>
+        </stream>
+        <stream type="alarm">
+            <apply effect="dlb_alarm_listener"/>
+        </stream>
+        <stream type="system">
+            <apply effect="dlb_system_listener"/>
+        </stream>
+        <stream type="notification">
+            <apply effect="dlb_notification_listener"/>
+        </stream>
+    </postprocess>
 
     <!-- Audio pre processor configurations.
          The pre processor configuration is described in a "preprocess" element and consists in a
